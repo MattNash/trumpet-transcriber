@@ -34,6 +34,14 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+**Using conda instead?** Replace the three commands above with these, and still use `pip` for the packages (don't `conda install pytorch` as well; mixing the two breaks GPU setups):
+
+```bash
+conda create -n trumpet python=3.12
+conda activate trumpet
+pip install -r requirements.txt
+```
+
 Check that PyTorch can see your NVIDIA GPU (should print `True`):
 
 ```bash
