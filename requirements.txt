@@ -1,6 +1,11 @@
 # The standard PyTorch from PyPI includes CUDA support for RTX 50-series GPUs.
 torch
-demucs>=4.1
+demucs>=4.1        # step 2: instrument separation
 soundfile
 numpy
+torchcrepe         # step 3: pitch tracking (its models are included, no download)
+librosa            # steps 3-4: audio loading, beat tracking
+scipy
+mido               # MIDI preview file
+matplotlib         # pitch chart
 pytest
